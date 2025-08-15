@@ -52,15 +52,45 @@
     </section>
 
     <section class="payment">
-        <div>
-            
+        <div class="name-box box">
+            <h2 class="box-title">Nmae</h2>
+            <div class="input-group">
+                <label class="user-input-label">Name For Order</label>
+                <input id="name" class="user-input" type="text" >
+            </div>
         </div>
         <div>
-            
+            <h2 class="box-title">Payment</h2>
+            <div class="input-group">
+                <label class="user-input-label">Card Number</label>
+                <input class="user-input" type="text" id="cc">
+            </div>
+            <div class="input-group">
+                <label class="user-input-label" for="ccv">CCV number</label>
+                <input class="user-input short-input" type="text" id="ccv">
+            </div>
         </div>
     </section>
 
     <section class="total">
+        <table class="totals-table">
+            <tr>
+                <td>Subtotal:</td>
+                <td>$19.27</td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td>$0.96</td>
+                
+            </tr>
+            <tr class="final-totals">
+                <td>Total:</td>
+                <td>$20.23</td>
+
+            </tr>
+
+        </table>
+            <button class="checkout" type="button">Place Order</button>
 
     </section>
 </div>    
