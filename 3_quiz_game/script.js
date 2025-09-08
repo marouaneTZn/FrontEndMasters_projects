@@ -7,7 +7,7 @@
     // optionButtons should be all the elements within the "options" div
     let optionButtons = document.querySelector("#options").children;
     // explanation should be the "explanation" div
-    let explanation = document.querySelector("#explanation").textContent;
+    let explanation = document.querySelector("#explanation");
 
     
 
@@ -17,7 +17,7 @@
     let fact = {
         statement : "The JavaScript programming language created in just 10 days?",
         answer : true,
-        fact : "The JavaScript programming language was created by Brendan Eich in just 10 days in May 1995."
+        explanation : "The JavaScript programming language was created by Brendan Eich in just 10 days in May 1995."
     };
 
     
@@ -46,14 +46,16 @@
     // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
     for (let button of optionButtons){
                 button.addEventListener("click", (event) => {
-                    console.log("heard a click");
+                   
                      
                     // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
                     
-                    
+                    explanation.textContent = fact.explanation;
                     // TODO 7: Within the event handler function, 
                     // Use a for loop to disable all the option buttons
-                    
+                    for (let button of optionButtons){
+                        disable(button);
+                    }
                     
                     // TODO 8: Within the event handler function,
                     // Get the guessed value from the clicked button
