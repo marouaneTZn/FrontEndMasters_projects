@@ -59,6 +59,7 @@
             const clicked = event.currentTarget;
             // button values are strings "true"/"false" in the HTML; coerce to boolean
             const guess = clicked.value === "true"
+            //hello comment
 
             // add appropriate class on the clicked button
             if (isCorrect(guess)){
