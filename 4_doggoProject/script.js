@@ -65,7 +65,9 @@
     function getBreedFromURL(url) {
         // The string method .split(char) may come in handy
         // Try to use destructuring as much as you can
-        
+        let unsplateBreed = url.split("/")[4];
+        let [breed, subbreed] = unsplateBreed.split("-");
+        return [subbreed, breed].join(" ").trim();
     }
 
 
