@@ -1,5 +1,5 @@
 let buffer = '0';
-
+const display = document.querySelector('.display');
 
 function buttonclick(value){
      if (isNaN(parseInt(value))){
@@ -7,18 +7,20 @@ function buttonclick(value){
     }else {
         handleNumber(value);
     }
+    rerender();
 }
 
 
 function handleNumber(value){
     if(buffer === '0'){
-        buffer = Number;
+        buffer = value;
     }else{
-        buffer += Number;
+        buffer += value;
     }
+    
 }
 function handleSymbl(){
-    console.log('symbel');
+    console.log('symbol');
 }
 
 function init(){
@@ -29,6 +31,10 @@ function init(){
             buttonclick(event.target.innerText);
 
         });
+}
+
+function rerender(){
+    display.innerText = buffer;
 }
 
 init();
