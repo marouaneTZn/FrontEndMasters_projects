@@ -53,8 +53,7 @@ h3{
 
 p{
     line-height: 1.5;
-    text-align: justify;
-  text-justify: inter-word;
+
 }
 
 a{
@@ -109,5 +108,17 @@ ul svg{
   height: 190px;
   width: 260px;
   overflow: hidden;
+}
 
+
+@media (min-width: 750px){
+  .wrapper{
+    padding: 5rem;
+  }
+
+  .main-article{
+    grid-template-columns: 1fr 1fr;
+      text-align: left;
+
+  }
 }
