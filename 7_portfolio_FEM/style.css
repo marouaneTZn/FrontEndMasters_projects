@@ -475,4 +475,34 @@ footer {
   .footer-text .icons {
     grid-column: 1/4;
   }
-} 
+}
+
+/*this is the projects section*/
+
+main{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.project{
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: var(--corners);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.projects{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 3rem;
+}
+
+.projects ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
