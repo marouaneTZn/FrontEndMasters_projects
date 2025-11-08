@@ -8,6 +8,7 @@
   --onyx: #3c3d44;
   --charcoal: #343c47;
   --corners: 24px 0;
+  --corners-sm: 10px 0;
   --base-font-size: 1rem;
 }
 /* set the box sizing to border-box for layouts */
@@ -494,15 +495,39 @@ main{
   gap: 3rem;
 }
 
+
+
 .projects{
   display: flex;
   flex-flow: column nowrap;
   gap: 3rem;
 }
 
+
+/*Now we need toke make the skils(li) in one line*/
 .projects ul{
   margin: 0;
   padding: 0;
   list-style: none;
+/*the code below where we are going the set them horizontale*/
+  display: flex;
+  /*code below (wrap) we let them go line by line and id we use (nowrap) the elements will stay in one line*/
+  flex-flow: row wrap;
+  /*this will put them in center*/
+  justify-content: center;
+  /*this will put a gap between them*/
+  gap: 1rem;
+}
 
+
+.projects li{
+  background-color: var(--marina);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: var(--corners-sm);
+  font-size: calc(var(--base-font-size) * 0.85);
+}
+
+.project img {
+  grid-row: 1/2;
 }
