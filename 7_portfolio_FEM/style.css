@@ -10,10 +10,17 @@
   --corners: 24px 0;
   --corners-sm: 10px 0;
   --base-font-size: 1rem;
+  --ld-bkgd: light-dark(var(--platinum), var(--charcoal));
+  --ld-text: light-dark(var(--onyx), var(--white));
+  --ld-projects: light-dark(var(--white), #2e313d);
+  --ld-blue: light-dark(var(--windsurfing), #6dadd0);
+
 }
 /* set the box sizing to border-box for layouts */
+
 html {
   box-sizing: border-box;
+  color-scheme: light dark;
 }
 *,
 *::before,
@@ -29,8 +36,8 @@ html {
 body {
   font-size: var(--base-font-size);
   font-family: "Inter", sans-serif;
-  background-color: var(--platinum);
-  color: var(--onyx);
+  background-color: var(--ld-bkgd);
+  color: var(--ld-text);
 }
 /* make sure images don't exceed the width of the window */
 img {
@@ -44,7 +51,7 @@ h1 {
 h2 {
   font-size: var(--base-font-size);
   text-transform: uppercase;
-  color: var(--windsurfing);
+  color: var(--ld-blue);
   letter-spacing: 0.25em;
   margin: 0;
 }
@@ -55,7 +62,7 @@ p {
   line-height: 1.5;
 }
 a {
-  color: var(--windsurfing);
+  color: var(--ld-blue);
 }
 a:hover {
   color: var(--marina);
@@ -76,7 +83,7 @@ ul svg {
   height: 36px;
 }
 .social {
-  fill: var(--windsurfing);
+  fill: var(--ld-blue);
 }
 .social:hover {
   fill: var(--marina);
@@ -106,6 +113,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 3rem;
+  background-color: var(--ld-projects);
 }
 .project {
   background-color: var(--white);
