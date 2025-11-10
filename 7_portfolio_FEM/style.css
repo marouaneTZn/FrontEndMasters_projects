@@ -20,12 +20,12 @@ html {
   box-sizing: border-box;
   color-scheme: light dark;
 }
-/* html:has(#mode-switcher [value="light"]:checked){
+html:has(#mode-switcher [value="light"]:checked){
   color-scheme: light;
 }
 html:has(#mode-switcher [value="dark"]:checked){
   color-scheme: dark;
-} */
+}
 *,
 *::before,
 *::after {
