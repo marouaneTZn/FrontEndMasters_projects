@@ -1,0 +1,48 @@
+/* extremely basic formatting */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.button {
+  background-color: #2D697C;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.button:hover {
+  background-color: #327c94;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 3rem 0;
+    border-bottom: 1px solid #ccc;
+    gap: 0;
+    align-items: center;
+
+}
+
+.card h2{
+    border: 1px solid red;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.card img{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
